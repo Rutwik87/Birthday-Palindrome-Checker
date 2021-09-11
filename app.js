@@ -45,28 +45,14 @@ function getNextDate(date){
 function dateToString(date){
     var dd = `${date.getDate()}`
     var mm = `${date.getMonth() + 1}`
-    if(date.getMonth()+1 < 10 ){
+    if(mm+1 < 10 ){
         mm = `0${mm}`
     }
-    if(date.getDate() < 10 ){
+    if(dd < 10 ){
         dd = `0${dd}`
     }
     return `${date.getFullYear()}-${mm}-${dd}`
 }
-
-
-// function dateToString(date){
-//     if(date.getMonth() < 10 && date.getDate() < 10 ){
-//         return `${date.getFullYear()}-0${date.getMonth()}-0${date.getDate()}`
-//     }
-//     else if(date.getMonth() < 10 ){
-//         return `${date.getFullYear()}-0${date.getMonth()}-${date.getDate()}`
-//     }   
-//     else if(date.getDay() < 10 ){
-//         return `${date.getFullYear()}-${date.getMonth()}-0${date.getDate()}`
-//     }   
-// }
-    
 
 function nearestPalindrome(date){
     for ( let i = 1 ; i > 0 ; i++){
