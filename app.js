@@ -66,7 +66,7 @@ function nearestPalindrome(date){
 
 form.addEventListener('submit' , function(e){
     e.preventDefault()
-    if(this.dob.value === undefined ){
+    if(this.dob.value === "" ){
         result.innerText = "Invalid Input !!!"    
         numDays.innerText = ""
     }
