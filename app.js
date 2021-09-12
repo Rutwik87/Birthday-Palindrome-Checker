@@ -45,7 +45,7 @@ function getNextDate(date){
 function dateToString(date){
     var dd = `${date.getDate()}`
     var mm = `${date.getMonth() + 1}`
-    if(mm+1 < 10 ){
+    if(date.getMonth()+1 < 10 ){
         mm = `0${mm}`
     }
     if(dd < 10 ){
