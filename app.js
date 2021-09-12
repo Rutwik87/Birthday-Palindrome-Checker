@@ -66,14 +66,21 @@ function nearestPalindrome(date){
 
 form.addEventListener('submit' , function(e){
     e.preventDefault()
-    if(palindromeDateListChecker(dateList(this.dob.value))){
+    if(this.dob.value === undefined ){
+        result.innerText = "Invalid Input !!!"    
+        numDays.innerText = ""
+    }
+    else{
+        if(palindromeDateListChecker(dateList(this.dob.value))){
         result.innerText = "Palindrome!!!"    
         numDays.innerText = ""
         return 
-    }else{
+        }
+        else{
         result.innerText = "Not a Palindrome!!!"
         var output = nearestPalindrome(this.dob.value);
+        }
+        const dateDays = nearestPalindrome(this.dob.value)
+        numDays.innerText = `Nearest palindrome date is ${dateDays[0]}  , you missed by ${dateDays[1]} days`
     }
-    const dateDays = nearestPalindrome(this.dob.value)
-    numDays.innerText = `Nearest palindrome date is ${dateDays[0]}  , you missed by ${dateDays[1]} days`
 })
