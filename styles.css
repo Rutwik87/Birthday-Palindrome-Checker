@@ -1,0 +1,43 @@
+body {
+    max-width:600px;
+    margin:auto;
+    text-align: center;
+    background: #ECCCAD;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding:10em 0em;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+label{
+    margin: 20px;
+}
+input{
+    max-width: 200px;
+    margin: auto;
+    padding: 0.5rem;
+    border: none;
+    box-shadow: none;
+    border-radius: 0.4em;
+}
+
+button{
+    max-width: 200px;
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+    box-shadow: none;
+    border-radius: 0.4em;
+    font-size:1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    padding:0.5rem;
+    background-color:#EAB1A1 ;
+}
+
+

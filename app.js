@@ -75,5 +75,5 @@ form.addEventListener('submit' , function(e){
         var output = nearestPalindrome(this.dob.value);
     }
     const dateDays = nearestPalindrome(this.dob.value)
-    numDays.innerText = `Nearest palindrome date ${dateDays[0]}  , you missed by ${dateDays[1]} days`
+    numDays.innerText = `Nearest palindrome date is ${dateDays[0]}  , you missed by ${dateDays[1]} days`
 })
